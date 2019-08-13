@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        apiService = ApiClient.getClient(getApplicationContext()).create(ApiService.class);
+//        apiService = ApiClient.getClient(getApplicationContext()).create(ApiService.class);
+        apiService = ApiClient.getApiClient(getApplicationContext()).create(ApiService.class);
 
         nameList("Aruna");
     }
